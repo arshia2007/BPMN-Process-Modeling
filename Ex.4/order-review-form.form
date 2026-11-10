@@ -1,0 +1,76 @@
+{
+  "components": [
+    {
+      "label": "Customer Reference",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_192juzf",
+        "columns": null
+      },
+      "id": "Field_0t34dby",
+      "key": "customerRef",
+      "readonly": true
+    },
+    {
+      "label": "Order Total",
+      "type": "number",
+      "layout": {
+        "row": "Row_1q048wv",
+        "columns": null
+      },
+      "id": "Field_0gtfbpf",
+      "key": "orderTotal",
+      "readonly": true
+    },
+    {
+      "label": "Customer Category",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_038xcg5",
+        "columns": null
+      },
+      "id": "Field_1xt679q",
+      "key": "customerCategory",
+      "readonly": true
+    },
+    {
+      "label": "Review Decision",
+      "values": [
+        {
+          "label": "Approve",
+          "value": "APPROVE"
+        },
+        {
+          "label": "Reject",
+          "value": "REJECT"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_1cw90gp",
+        "columns": null
+      },
+      "id": "Field_17e0yp3",
+      "key": "reviewDecision"
+    },
+    {
+      "label": "Reviewer Comments",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_03myl38",
+        "columns": null
+      },
+      "id": "Field_0ku3vtz",
+      "key": "reviewerComments"
+    }
+  ],
+  "type": "default",
+  "id": "order-review-form",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.9.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.49.0"
+  },
+  "schemaVersion": 19
+}

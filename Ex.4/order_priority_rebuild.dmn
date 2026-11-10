@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="Definitions_Test" name="DMN Test" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.49.0">
+  <decision id="order_priority" name="Test Priority">
+    <variable id="Variable_Test" name="priority" typeRef="string" />
+    <decisionTable id="Table_Test" hitPolicy="FIRST">
+      <input id="Input_Test" label="orderTotal">
+        <inputExpression id="InputExpression_Test" typeRef="number">
+          <text>orderTotal</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1i7m1pj" label=" customerCategory">
+        <inputExpression id="LiteralExpression_06w75az" typeRef="string">
+          <text>	customerCategory</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0psi91a" label=" deliveryPreference">
+        <inputExpression id="LiteralExpression_0zgvf9b" typeRef="string">
+          <text>	deliveryPreference</text>
+        </inputExpression>
+      </input>
+      <output id="Output_Test" label="deliveryPriority" name="priority" typeRef="string" />
+      <rule id="Rule_Test">
+        <inputEntry id="InputEntry_Test">
+          <text>&gt;= 20000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03mbclo">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0yjwg0s">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="OutputEntry_Test">
+          <text>"CRITICAL"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_17usu0b">
+        <inputEntry id="UnaryTests_035aq7v">
+          <text>&gt;= 10000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05qeg4t">
+          <text>"GOLD"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1rb54k7">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_161hzdx">
+          <text>"HIGH"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ldoqg4">
+        <inputEntry id="UnaryTests_1s59xtg">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05bmveo">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hg1dyk">
+          <text>"EXPRESS"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1twsu6j">
+          <text>"HIGH"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0stwzyo">
+        <inputEntry id="UnaryTests_1k45qd7">
+          <text>&gt;= 5000</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ew771z">
+          <text>"GOLD"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1rq1a66">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0qq4i33">
+          <text>"HIGH"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0oy02xz">
+        <inputEntry id="UnaryTests_12fiw5m">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1t4cktq">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0i1q4aq">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05dah6h">
+          <text>"NORMAL"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="DMNDiagram_08nkuxx">
+      <dmndi:DMNShape id="DMNShape_04q0onc" dmnElementRef="order_priority">
+        <dc:Bounds height="80" width="180" x="150" y="80" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

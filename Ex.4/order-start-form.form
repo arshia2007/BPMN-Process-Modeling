@@ -1,0 +1,107 @@
+{
+  "components": [
+    {
+      "label": "Customer Reference",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_03oq6fg",
+        "columns": null
+      },
+      "id": "Field_0f42t9f",
+      "key": "customerRef"
+    },
+    {
+      "label": "Product ID",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1p2jxen",
+        "columns": null
+      },
+      "id": "Field_0x6eb3m",
+      "key": "productId"
+    },
+    {
+      "label": "Quantity",
+      "type": "number",
+      "layout": {
+        "row": "Row_0bgn84k",
+        "columns": null
+      },
+      "id": "Field_0894g8n",
+      "key": "quantity"
+    },
+    {
+      "label": "Customer Category",
+      "values": [
+        {
+          "label": "REGULAR",
+          "value": "REGULAR"
+        },
+        {
+          "label": "GOLD",
+          "value": "GOLD"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_08apnp0",
+        "columns": null
+      },
+      "id": "Field_1tbf4hh",
+      "key": "customerCategory"
+    },
+    {
+      "label": "Delivery Preference",
+      "values": [
+        {
+          "label": "STANDARD",
+          "value": "STANDARD"
+        },
+        {
+          "label": "EXPRESS",
+          "value": "EXPRESS"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_0382zaq",
+        "columns": null
+      },
+      "id": "Field_0h62wcj",
+      "key": "deliveryPreference"
+    },
+    {
+      "label": "Payment Token",
+      "values": [
+        {
+          "label": "SUCCESS",
+          "value": "SUCCESS"
+        },
+        {
+          "label": "DECLINE",
+          "value": "DECLINE"
+        },
+        {
+          "label": "FAIL",
+          "value": "FAIL"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_0qen55v",
+        "columns": null
+      },
+      "id": "Field_0wmteew",
+      "key": "paymentToken"
+    }
+  ],
+  "type": "default",
+  "id": "order-start-form",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.8.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.49.0"
+  },
+  "schemaVersion": 19
+}
